@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css2?family=Heebo&family=Lora&display=swap);
+:root {
+    --primary-color: #5e239d;
+    --secondary-color: #f3e8ee;
+    --accent1-color: #a37774;
+    --accent2-color: #7c90db;
+
+    --heading-font: 'Heebo', sans-serif;
+    --paragraph-font: 'Lora', serif;
+
+    --nav-background-color: #ddc4dd;
+    --nav-link-color: #102e4a;
+    --nav-hover-link-color: #dd1c1a;
+    --nav-hover-background-color: #d1abad;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 3fr 15fr;
+    gap: 10px;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+}
+header nav {
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+}
+
+main {
+    max-width: 960px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+/*Class Selectors*/
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 240, 0.858);
+    top: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    color: #000;
+    background-color: rgba(188, 165, 226, 0.6);
+    top: 200px;
+    left: 0;
+    right: 0;
+    padding: 1px;
+    text-align: center;
+}
+
+.hero article img {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #bbb;
+    width: 200px;
+    height: auto;
+}
+.rafting{
+    max-width: 960px;
+}
+.rafting h2 {
+    display : flex;
+    justify-content : center;
+}
+.raftingimg {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+}
+
+.raftingimg img {
+    height : 100px;
+    width : auto;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--accent1-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 960px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.history {
+    display: flex;
+}
+
+.history1 {
+    padding-right: 20px;
+}
+
+.history2 {
+    padding-left: 25px;
+}
+
+.historyimg img {
+    width: 200px;
+}
+
+.employee {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+}
+
+.employee img {
+    height : 100px;
+    width : auto;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.step1 img {
+    width: 640px;
+}
+
+.step3 img {
+    width: 640px;
+}
+h1 {
+    text-align: center;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+
+.trip img {
+    width: 200px;
+}
+
+.plan {
+    display : flex;
+    justify-content : center;
+    border-style: solid;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    font-size : 2rem;
+    padding : 0.5rem;
+    margin : 1rem;
+}
+
+.plan:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.newsletter {
+    display : flex;
+    flex-direction : column;   
+    align-items : center;
+    text-align : center;
+    margin : 5px auto;
+    max-width : 350px;
+    padding : 20px;
+    background-color: #eee;
+}
+
+.newsletter button a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.grid {
+    display : grid;
+    grid-template-columns : repeat(2,1fr);
+    gap : 20px;
+    justify-items : center;
+    align-items : center;
+    margin-bottom : 20px;
+}
+
+.griditem img {
+    width: 440px;
+}
+
+.view {
+    display : flex;
+    justify-content : center;
+    border-style: solid;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    font-size : 2rem;
+    padding : 0.5rem;
+    margin : 1rem;
+}
+
+.view:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.river h1 {
+    position: absolute;
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 240, 0.7);
+    top: 240px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
